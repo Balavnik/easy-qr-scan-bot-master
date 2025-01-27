@@ -41,7 +41,7 @@ async def develop(update: Update, context: CallbackContext) -> None:
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
     await update.message.reply_text('Press to launch QR scanner', reply_markup=reply_markup)
-
+#
 async def button(update: Update, context: CallbackContext) -> None:
     """Parses the CallbackQuery and updates the message text."""
     query = update.callback_query
